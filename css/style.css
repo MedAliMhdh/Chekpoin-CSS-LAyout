@@ -1,0 +1,412 @@
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+/*body {
+  width: 1015px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}*/
+
+* {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/*************************Header*****************************/
+
+header {
+  width: 100%;
+  position: fixed;
+  position: -webkit-sticky;
+  z-index: 99;
+  top: 0;
+  background: white;
+}
+
+#heading {
+  width: 1015px;
+  margin: 0 auto;
+  height: 70px;
+  padding: 0px 20px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: white;
+}
+
+.dropdown {
+  opacity: 0;
+  position: absolute;
+  width: 500px;
+  z-index: 2;
+  background: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+
+  transform: translateX(-40%);
+  transition: opacity 0.15s ease-out;
+}
+
+.has-dropdown:focus-within .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown-item a {
+  width: 100%;
+  height: 100%;
+}
+
+#mainLogo {
+  width: 268px;
+  height: 70px;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #ababab;
+  padding: 19.95px 0px;
+  float: right;
+}
+
+nav ul li {
+  padding: 0px 9px;
+  float: left;
+}
+
+nav ul li:hover {
+  color: #00b39b;
+  cursor: pointer;
+}
+
+/*************************Main utilities*****************************/
+#utilities {
+  width: 1015px;
+  margin: 80px auto;
+  padding: 0px 20px;
+}
+
+#paragraphPart {
+  margin: 33px 19.7px 60px;
+  padding: 0px 20px;
+  color: #747474;
+  font-size: 17px;
+}
+
+#secondary_logo {
+  margin: 0px 400.5px;
+  width: 90px;
+  height: 87px;
+  padding: 0px;
+}
+
+#utilities h2 {
+  width: 975px;
+  height: 44px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 34px 0px;
+  font-size: 34px;
+  color: #00b39b;
+  margin: 34px 0px;
+  text-align: center;
+  font-weight: normal;
+}
+
+#utilities p {
+  width: 440.5px;
+  height: 112px;
+}
+
+#utilities {
+  height: 1400;
+}
+
+#forPatients {
+  width: 480.5px;
+  height: 392.55px;
+  background: #00ccb1;
+  border-radius: 10px;
+  padding: 1.375em 2.5em 0;
+  order: 0;
+  overflow: hidden;
+}
+
+#forDoctors {
+  width: 480.5px;
+  height: 392.55px;
+  background: #3d83df;
+  border-radius: 10px;
+  padding: 1.375em 2.5em 0;
+  order: 1;
+  overflow: hidden;
+}
+
+#boxes {
+  /*just for flex */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.boxTitle {
+  width: 397.5px;
+  height: 17.6px;
+  color: #ffffffb3;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.boxParagraph {
+  width: 397.5px;
+  height: 67.2px;
+  font-size: 26px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.boxImg {
+  width: 377.5px;
+  height: 228.75px;
+  position: relative;
+  left: 170px;
+}
+
+#forDoctors img {
+  position: relative;
+  bottom: 13px;
+}
+
+#forPatients img {
+  position: relative;
+  bottom: 17px;
+}
+
+#forPatients select {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 18px;
+  color: #333;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#utilities h5 {
+  font-size: 26px;
+  width: 321.75px;
+  height: 100.8;
+  padding: 0 26px 0 0;
+  color: #00b39b;
+  height: 30px;
+  margin: 0 0 100px 0;
+  float: left;
+}
+
+#utilities ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  justify-content: space-between;
+}
+
+#utilities ul li {
+  margin-bottom: 20px;
+}
+
+#utilities ul li a:hover {
+  color: #00b39b;
+}
+
+svg:hover {
+  fill: #00b39b;
+}
+
+svg {
+  fill: #747474;
+}
+
+/*************************Main Stats*****************************/
+
+#stats {
+  width: 100%;
+  height: 700px;
+  background: #e5faf8;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+#statsContainer {
+  width: 1015px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+#leftSide {
+  width: 420.1px;
+  height: 200px;
+  padding-top: 80px;
+  margin: 0 0 50px 0;
+  float: left;
+}
+
+#leftSide h2 {
+  color: #00b39b;
+  font-size: 34;
+}
+
+#leftSide p {
+  width: 415px;
+  height: 48px;
+  color: #474747;
+  font-size: 14px;
+  margin: 22.4px 0px;
+}
+
+#leftSide img {
+  width: 450px;
+  height: 420px;
+  position: relative;
+  right: 150px;
+  top: 120px;
+}
+
+#rightSide {
+  width: 700px;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 230px;
+}
+
+.statsElement {
+  width: 228px;
+  height: 250px;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+  background: #fff;
+  color: #474747;
+  margin: 10px;
+}
+
+.aBitDown {
+  position: relative;
+  top: 20px;
+}
+
+.statsElement img {
+  padding: 15px;
+}
+
+.statsElement h5 {
+  width: 228.4px;
+  height: 62.4px;
+  color: #00b39b;
+  font-size: 24px;
+  margin: 12px 0 12px 0;
+}
+
+/*************************Main Cities*****************************/
+
+#cities {
+  width: 1015px;
+  margin: 100px auto;
+  padding: 0px 20px;
+}
+
+#cities h2 {
+  width: 460px;
+  height: 76px;
+  font-size: 30px;
+  color: #00b39b;
+  text-align: center;
+  margin: auto;
+}
+
+#cities p {
+  width: 450px;
+  height: 48px;
+  color: #474747;
+  font-size: 14px;
+  margin: 22.4px 0px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+#citiesBoxess {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.citiesBox {
+  width: 300px;
+  height: 250px;
+  margin: 80px 30px 80px 0;
+  cursor: pointer;
+}
+
+.citiesBox:hover {
+  box-shadow: 1px 100px 4px rgba(0, 0, 0, 0.4);
+}
+
+.underCityImg {
+  background: white;
+  height: 60px;
+  width: 311px;
+}
+
+.underCityImg h6 {
+  float: left;
+  display: inline-block;
+  color: #474747;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.underCityImg button {
+  float: right;
+  display: inline-block;
+  background: #3d83df;
+  border: none;
+  width: 140px;
+  height: 35px;
+  border-radius: 5px;
+  margin: 10px 5px 0 0;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+/*************************Footer*****************************/
+
+footer {
+  height: 150px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #ababab;
+  border-width: 1px;
+  text-align: center;
+  height: 130px;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #ababab;
+}
+footer p:first-child {
+  padding: 10px;
+  margin-top: 10px;
+}
