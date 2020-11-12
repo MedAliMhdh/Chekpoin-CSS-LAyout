@@ -35,31 +35,33 @@ header {
 }
 
 .dropdown {
-  opacity: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
   position: absolute;
-  width: 500px;
-  z-index: 2;
-  background: black;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 3rem;
-  margin-top: 2rem;
-  padding: 0.5rem;
-
-  transform: translateX(-40%);
-  transition: opacity 0.15s ease-out;
+  background-color: white;
+  right: 0px;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-.has-dropdown:focus-within .dropdown {
-  opacity: 1;
-  pointer-events: auto;
+.dropdown-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #ababab;
+  padding: 19.95px 0px;
+  line-height: 5px;
 }
 
-.dropdown-item a {
-  width: 100%;
-  height: 100%;
+.dropdown-item:hover {
+  color: #00b39b;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 #mainLogo {
